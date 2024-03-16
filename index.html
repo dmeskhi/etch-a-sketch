@@ -11,7 +11,7 @@
   <body>
     <div class="flex-container">
       <div class="title">
-        <h1>SketchPad</h1>
+        <h1>SketchBoard</h1>
       </div>
       <div class="content">
         <div class="board"></div>
@@ -22,7 +22,8 @@
           <button>Reset</button>
         </div>
       </div>
-      <input type="text" placeholder="Size of Board" value="16" />
+      <input type="text" placeholder="Size of Board" value="16" 
+      onchange="changeSize(this.value)" />
       <button>Set size</button>
     </div>
   </body>
