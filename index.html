@@ -10,20 +10,21 @@
 
   <body>
     <div class="flex-container">
-      <div class="title">
-        <h1>SketchBoard</h1>
-      </div>
+      <div class="title"></div>
       <div class="content">
         <div class="board"></div>
         <div class="buttons">
           <button onclick="changeColor('black')">Black</button>
           <button onclick="changeColor('white')">Eraser</button>
-          <button onclick="changeColor('gray')">Gray</button>
           <button onclick="resetBoard()">Reset</button>
         </div>
       </div>
-      <input type="text" placeholder="Size of Board" value="16" 
-      onchange="changeSize(this.value)" />
+      <input
+        type="text"
+        placeholder="Size of Board"
+        value="16"
+        onchange="changeSize(this.value)"
+      />
       <button>Set size</button>
     </div>
   </body>
