@@ -8,7 +8,8 @@ function createBoard(size) {
   let amount = size * size;
   for (let i = 0; i < amount; i++) {
     let square = document.createElement("div");
-    square.style.backgroundColor = "blue";
+    square.addEventListener("mouseover", colorDot);
+    square.style.backgroundColor = "white";
     board.insertAdjacentElement("beforeend", square);
   }
 }
@@ -16,9 +17,13 @@ createBoard(16);
 
 function changeSize(input) {
   //validate input
-  if (input >= 2 || input <= 100) {
+  if (input >= 2 && input <= 100) {
     createBoard(input);
   } else {
     console.log("Error");
   }
+}
+
+function colorDot() {
+  square.style.backgroundColor = "black";
 }
